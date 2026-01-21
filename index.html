@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProBro | Official Website</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    body { background: radial-gradient(circle at top, #0a1a3a, #000); color: #fff; }
+    header { padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; background: rgba(0,0,0,0.6); }
+    header h1 { color: #3da9ff; }
+    nav a { color: #fff; margin-left: 20px; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #3da9ff; }
+
+    section { padding: 60px 40px; }
+
+    .hero { text-align: center; }
+    .hero h2 { font-size: 42px; margin-bottom: 10px; }
+    .hero p { opacity: 0.8; }
+
+    .btn { margin-top: 25px; padding: 15px 30px; background: #3da9ff; color: #000; border: none; border-radius: 10px; font-size: 18px; cursor: pointer; }
+    .btn:hover { background: #66beff; }
+
+    .developers { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
+    .dev-card { background: rgba(255,255,255,0.08); border-radius: 20px; padding: 20px; text-align: center; box-shadow: 0 0 25px rgba(0,0,0,0.6); }
+    .dev-card img { width: 100%; border-radius: 15px; }
+    .dev-card h3 { margin-top: 15px; }
+    .lead { border: 2px solid #3da9ff; }
+
+    footer { text-align: center; padding: 20px; opacity: 0.6; font-size: 14px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ProBro</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#developers">Developers</a>
+    <a href="#download">Login</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h2>Welcome to the Official ProBro Website</h2>
+  <p>You are automatically the owner. No sign-in required.</p>
+  <button class="btn" onclick="scrollToDownload()">Go to Login</button>
+</section>
+
+<section id="developers">
+  <h2>Developers</h2>
+  <div class="developers">
+
+    <div class="dev-card lead">
+      <img src="bfd264f0-3f73-4dfe-a654-34e89d5c289a.png" alt="ProBro">
+      <h3>ProBro</h3>
+      <p>Lead Developer</p>
+    </div>
+
+    <div class="dev-card">
+      <img src="984b5880-cde8-4f3c-b843-c4d5f0ed5616.png" alt="KingJHA">
+      <h3>KingJHA</h3>
+      <p>Developer</p>
+    </div>
+
+    <div class="dev-card">
+      <img src="20dbd278-a0d6-4dc8-a87a-bf1d8b213281.png" alt="TheJosh319">
+      <h3>TheJosh319</h3>
+      <p>Developer</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="download" class="hero">
+  <h2>Login</h2>
+  <p>Click below to continue. Download will start automatically.</p>
+  <a href="app.zip" download>
+    <button class="btn">Login & Download</button>
+  </a>
+</section>
+
+<footer>
+  © 2026 ProBro. All rights reserved.
+</footer>
+
+<script>
+  function scrollToDownload() {
+    document.getElementById('download').scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
